@@ -8,7 +8,7 @@ using Vacation_System.Entity;
 
 namespace Vacation_System.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext: DbContext
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
@@ -24,7 +24,7 @@ namespace Vacation_System.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=ABDELAZIZ;Database=VacationSystemDB;Integrated Security=True;TrustServerCertificate = True;");
+            optionsBuilder.UseSqlServer("Server=Server_name;Database=Database_name;Integrated Security=True;TrustServerCertificate = True;");
         }
 
        
