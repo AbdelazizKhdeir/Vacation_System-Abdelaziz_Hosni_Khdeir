@@ -12,7 +12,7 @@ namespace EmployeeVacationSystem
         static void Main(string[] args)
         {
             // Configure database connection
-            const string connectionString = "Server=ABDELAZIZ;Database=VacationSystemDB;Trusted_Connection=True;";
+            const string connectionString = "Server=server_name;Database=DB_name;Trusted_Connection=True;";
 
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
             optionsBuilder.UseSqlServer(connectionString);
